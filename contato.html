@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davi Gonçalves | Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>if (localStorage.getItem("tema") === "escuro") document.documentElement.classList.add("escuro");</script>
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">DG</a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Início</a><span>//</span>
+      <a href="habilidades.html">Habilidades</a><span>//</span>
+      <a href="projetos.html">Projetos</a><span>//</span>
+      <a href="contato.html" class="ativo">Contato</a>
+    </nav>
+    <div class="acoes">
+      <button class="botao-tema" id="botaoTema">Escuro</button>
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao cabecalho">
+      <h1 class="titulo-grande">Vamos<br>conversar?</h1>
+      <p class="frase">Preencha o formulário ou use uma das formas de contato abaixo.</p>
+    </section>
+
+    <section class="secao">
+      <div class="duas-colunas topo-alinhado">
+
+        <form id="formulario" class="formulario" novalidate>
+          <h2>Mande uma mensagem</h2>
+
+          <label for="nome">Nome *</label>
+          <input type="text" id="nome" placeholder="Seu nome completo" maxlength="60">
+          <small class="erro" id="erroNome"></small>
+
+          <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" placeholder="(00) 00000-0000" maxlength="15">
+          <small class="erro" id="erroTelefone"></small>
+
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" placeholder="voce@exemplo.com" maxlength="80">
+          <small class="erro" id="erroEmail"></small>
+
+          <label for="mensagem">Mensagem *</label>
+          <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem" maxlength="500"></textarea>
+          <small class="contador" id="contador">0 / 500</small>
+          <small class="erro" id="erroMensagem"></small>
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
+
+        <div class="lista-contatos">
+          <h2>Outras formas</h2>
+          <a href="https://wa.me/5531997718271" target="_blank" class="contato">
+            <span class="sigla">WA</span>
+            <div><h3>WhatsApp</h3><p>(31) 9771-8271</p></div>
+          </a>
+          <a href="www.linkedin.com/in/davi-gonçalves-782a39442" target="_blank" class="contato">
+            <span class="sigla">IN</span>
+            <div><h3>LinkedIn</h3><p>linkedin.com/in/davi-gonçalves-782a39442</p></div>
+          </a>
+          <div class="contato" data-copiar="davigoncalves0327@gmail.com">
+            <span class="sigla">@</span>
+            <div><h3>E-mail</h3><p>davigoncalves0327@gmail.com(clique para copiar)</p></div>
+          </div>
+          <a href="https://instagram.com/d.santozzs" target="_blank" class="contato">
+            <span class="sigla">IG</span>
+            <div><h3>Instagram</h3><p>@d.santozzs</p></div>
+          </a>
+          <a href="https://github.com/Davi-prog0327" target="_blank" class="contato">
+            <span class="sigla">GH</span>
+            <div><h3>GitHub</h3><p>github.com/Davi-prog0327!</p></div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div>
+      <p class="logo">DG</p>
+      <p>&copy; 2026 Davi Gonçalves</p>
+    </div>
+    <div class="rodape-contato">
+      <a href="mailto:davigoncalves0327@gmail.com">davigoncalves0327@gmail.com</a>
+      <a href="https://wa.me/5531997718271" target="_blank">WhatsApp (31) 9771-8271</a>
+      <a href="https://github.com/Davi-prog0327" target="_blank">GitHub</a>
+      <a href="www.linkedin.com/in/davi-gonçalves-782a39442" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-caixa">
+      <button class="modal-fechar" id="modalFechar" aria-label="Fechar">&times;</button>
+      <h3 id="modalTitulo"></h3>
+      <p id="modalTexto"></p>
+    </div>
+  </div>
+
+  <button class="voltar" id="voltar" aria-label="Voltar ao topo">&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>

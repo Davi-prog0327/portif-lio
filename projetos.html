@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davi Gonçalves | Projetos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>if (localStorage.getItem("tema") === "escuro") document.documentElement.classList.add("escuro");</script>
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">DG</a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Início</a><span>//</span>
+      <a href="habilidades.html">Habilidades</a><span>//</span>
+      <a href="projetos.html" class="ativo">Projetos</a><span>//</span>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <div class="acoes">
+      <button class="botao-tema" id="botaoTema">Escuro</button>
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao cabecalho">
+      <h1 class="titulo-grande">Projetos</h1>
+      <p class="frase">Alguns trabalhos que já fiz. Clique em um projeto para ver os detalhes.</p>
+    </section>
+
+    <section class="secao">
+      <div class="grade-projetos">
+        <article class="projeto" data-titulo="Site Portfólio" data-texto="Site pessoal feito com HTML, CSS e JavaScript, com modo escuro, formulário com máscaras e layout para celular.">
+          <span class="numero">01</span>
+          <h3>Site Portfólio</h3>
+          <p>HTML, CSS e JavaScript</p>
+        </article>
+        <article class="projeto" data-titulo="Design para sites" data-texto="Projetos de sites, como este portifólio, foram feitos inteiramente no figma.">
+          <span class="numero">02</span>
+          <h3>Projeto 02</h3>
+          <p>Figma</p>
+        </article>
+        <article class="projeto" data-titulo="Vídeos" data-texto="Uma experiência de 3 anos na edição de vídeo pode ser provada no meu canal do YouTube!">
+          <span class="numero">03</span>
+          <h3>Projeto 03</h3>
+          <p>Edição de vídeo</p>
+        </article>
+        <article class="projeto" data-titulo="Slides" data-texto="Ótimo em criar apresentações de slide! sendo agráveis no sentido de design e no de praticidade..">
+          <span class="numero">04</span>
+          <h3>Projeto 04</h3>
+          <p>Canva</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao centro">
+      <h2 class="titulo-grande">Veja mais em:</h2>
+      <div class="redes">
+        <a href="https://github.com/Davi-prog0327" target="_blank" class="rede github">GitHub</a>
+        <a href="https://www.youtube.com/@Aeze-u5e" target="_blank" class="rede youtube">YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div>
+      <p class="logo">DG</p>
+      <p>&copy; 2026 Davi Gonçalves</p>
+    </div>
+    <div class="rodape-contato">
+      <a href="mailto:davigoncalves0327@gmail.com">davigoncalves0327@gmail.com</a>
+      <a href="https://wa.me/5531997718271" target="_blank">WhatsApp (31) 9771-8271</a>
+      <a href="https://github.com/Davi-prog0327" target="_blank">GitHub</a>
+      <a href="www.linkedin.com/in/davi-gonçalves-782a39442" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-caixa">
+      <button class="modal-fechar" id="modalFechar" aria-label="Fechar">&times;</button>
+      <h3 id="modalTitulo"></h3>
+      <p id="modalTexto"></p>
+    </div>
+  </div>
+
+  <button class="voltar" id="voltar" aria-label="Voltar ao topo">&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
